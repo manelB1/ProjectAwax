@@ -28,7 +28,11 @@ header {
 .logimg {
     width: 80px;
     height: 80px;
-    background-color: #b28756;
+}
+
+.logimg img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .menu {
@@ -60,4 +64,65 @@ menu li {
 .menu li a:hover,
 .menu .active a {
     border-bottom: 5px solid #b28756;
+    color: gray;
+}
+
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    display: flex;
+    /*o 100vh vai se adaptar ao tamanho da tela do usuario*/
+    /*background bottom ele prioriza mostrar a parte inferior da imagem*/
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slidearea {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner h1 span {
+    color: #b28756;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+}
+
+.banner .slidearea a {
+    text-decoration: none;
+    display: block;
+    background-color: #b28756;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
 }
