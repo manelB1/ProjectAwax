@@ -6,6 +6,10 @@
     font-family: 'Montserrat'
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     height: 100px;
     background-color: black;
@@ -67,6 +71,18 @@ menu li {
     color: gray;
 }
 
+.button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #b28756;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
 .banner {
     height: calc(100vh - 100px);
     background-color: #333;
@@ -115,14 +131,98 @@ menu li {
     text-transform: uppercase;
 }
 
-.banner .slidearea a {
-    text-decoration: none;
-    display: block;
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 810px;
+    gap: 15px;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
     background-color: #b28756;
-    color: white;
+}
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50x;
+}
+
+.default .section-title,
+.section-desc {
+    text-align: center;
     text-transform: uppercase;
-    font-size: 15px;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
+    font-weight: bold;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 13px;
+    color: rgb(56, 56, 56);
+    margin-top: 13px;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    margin: auto;
+    max-width: 1140px;
+}
+
+.default.light {
+    background-color: #f7f7f7;
+    margin-bottom: 80px;
+    padding: 50px;
+}
+
+.default.light .section-title,
+.default.light .section-body {
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000;
+    padding: 50px;
+    color: white;
+}
+
+.default.dark .section-title .default.dark .section-body {
+    color: #fff;
+}
+
+.section-aboutus {
+    display: flex;
+    gap: 20px;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.section-aboutus--right {
+    width: 500px;
+    text-align: center;
+}
+
+.section-aboutus--right img {
+    width: 100%;
+    box-shadow: 0px 5px 10px #333;
 }
