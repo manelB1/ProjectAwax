@@ -1,228 +1,336 @@
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat'
-}
-
-body {
-    overflow-x: hidden;
-}
-
-header {
-    height: 100px;
-    background-color: black;
-    color: white;
-}
-
-.header {
-    max-width: 1140px;
-    height: 100px;
-    margin: auto;
-    /*centraliza a div*/
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 100px;
-}
-
-.logimg {
-    width: 80px;
-    height: 80px;
-}
-
-.logimg img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.menu {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu ul,
-menu li {
-    list-style: none;
-}
-
-.menu ul {
-    display: flex;
-    gap: 25px;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    border-bottom: 5px solid #000;
-}
-
-.menu li a:hover,
-.menu .active a {
-    border-bottom: 5px solid #b28756;
-    color: gray;
-}
-
-.button {
-    text-decoration: none;
-    display: inline-block;
-    background-color: #b28756;
-    color: white;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
-}
-
-.banner {
-    height: calc(100vh - 100px);
-    background-color: #333;
-    background-image: url('../img/bg.jpg');
-    background-size: cover;
-    background-position: bottom;
-    overflow: hidden;
-    display: flex;
-    /*o 100vh vai se adaptar ao tamanho da tela do usuario*/
-    /*background bottom ele prioriza mostrar a parte inferior da imagem*/
-}
-
-.banner .sliders {
-    width: 1000vw;
-    height: 100%;
-}
-
-.banner .slide {
-    width: 100vw;
-    height: 100%;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.banner .slidearea {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    gap: 20px;
-}
-
-.banner h1 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 50px;
-}
-
-.banner h1 span {
-    color: #b28756;
-}
-
-.banner h2 {
-    text-transform: uppercase;
-}
-
-.banner .sliders-pointers {
-    width: 100vw;
-    height: 20px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 810px;
-    gap: 15px;
-}
-
-.banner .pointer {
-    width: 15px;
-    height: 15px;
-    border: 2px solid #b28756;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.banner .pointer.active {
-    background-color: #b28756;
-}
-
-.default {
-    padding-top: 50px;
-    padding-bottom: 50x;
-}
-
-.default .section-title,
-.section-desc {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.default .section-title {
-    font-size: 20px;
-}
-
-.default .section-desc {
-    font-size: 13px;
-    color: rgb(56, 56, 56);
-    margin-top: 13px;
-    margin-bottom: 40px;
-}
-
-.default .section-body {
-    margin: auto;
-    max-width: 1140px;
-}
-
-.default.light {
-    background-color: #f7f7f7;
-    margin-bottom: 80px;
-    padding: 50px;
-}
-
-.default.light .section-title,
-.default.light .section-body {
-    color: #000;
-}
-
-.default.dark {
-    background-color: #000;
-    padding: 50px;
-    color: white;
-}
-
-.default.dark .section-title .default.dark .section-body {
-    color: #fff;
-}
-
-.section-aboutus {
-    display: flex;
-    gap: 20px;
-}
-
-.section-aboutus--left {
-    flex: 1;
-}
-
-.section-aboutus--left p {
-    font-size: 14px;
-    line-height: 25px;
-}
-
-.section-aboutus--right {
-    width: 500px;
-    text-align: center;
-}
-
-.section-aboutus--right img {
-    width: 100%;
-    box-shadow: 0px 5px 10px #333;
-}
+    * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat'
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    header {
+        height: 100px;
+        background-color: black;
+        color: white;
+    }
+    
+    .header {
+        max-width: 1140px;
+        height: 100px;
+        margin: auto;
+        /*centraliza a div*/
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 100px;
+    }
+    
+    .logimg {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .logimg img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .menu {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .menu ul,
+    menu li {
+        list-style: none;
+    }
+    
+    .menu ul {
+        display: flex;
+        gap: 25px;
+    }
+    
+    .menu li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        border-bottom: 5px solid #000;
+    }
+    
+    .menu li a:hover,
+    .menu .active a {
+        border-bottom: 5px solid #b28756;
+        color: gray;
+    }
+    
+    .button {
+        text-decoration: none;
+        display: inline-block;
+        background-color: #b28756;
+        color: white;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 10px 30px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    
+    .banner {
+        height: calc(100vh - 100px);
+        background-color: #333;
+        background-image: url('../img/bg.jpg');
+        background-size: cover;
+        background-position: bottom;
+        overflow: hidden;
+        display: flex;
+        /*o 100vh vai se adaptar ao tamanho da tela do usuario*/
+        /*background bottom ele prioriza mostrar a parte inferior da imagem*/
+    }
+    
+    .banner .sliders {
+        width: 1000vw;
+        height: 100%;
+    }
+    
+    .banner .slide {
+        width: 100vw;
+        height: 100%;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .banner .slidearea {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 20px;
+    }
+    
+    .banner h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    
+    .banner h1 span {
+        color: #b28756;
+    }
+    
+    .banner h2 {
+        text-transform: uppercase;
+    }
+    
+    .banner .sliders-pointers {
+        width: 100vw;
+        height: 20px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 810px;
+        gap: 15px;
+    }
+    
+    .banner .pointer {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #b28756;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    .banner .pointer.active {
+        background-color: #b28756;
+    }
+    
+    .default {
+        padding-top: 50px;
+        padding-bottom: 50x;
+    }
+    
+    .default .section-title,
+    .section-desc {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .default .section-title {
+        font-size: 20px;
+    }
+    
+    .default .section-desc {
+        font-size: 13px;
+        color: rgb(56, 56, 56);
+        margin-top: 13px;
+        margin-bottom: 40px;
+    }
+    
+    .default .section-body {
+        margin: auto;
+        max-width: 1140px;
+    }
+    
+    .default.light {
+        background-color: #f7f7f7;
+        margin-bottom: 80px;
+        padding: 50px;
+    }
+    
+    .default.light .section-title,
+    .default.light .section-body {
+        color: #000;
+    }
+    
+    .default.dark {
+        background-color: #000;
+        padding: 50px;
+        color: white;
+    }
+    
+    .default.dark .section-title .default.dark .section-body {
+        color: #fff;
+    }
+    
+    .section-aboutus {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .section-aboutus--left {
+        flex: 1;
+    }
+    
+    .section-aboutus--left p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    
+    .section-aboutus--right {
+        width: 500px;
+        text-align: center;
+    }
+    
+    .section-aboutus--right img {
+        width: 100%;
+        box-shadow: 0px 5px 10px #333;
+    }
+    
+    .section-services {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .section-service img {
+        width: 80px;
+    }
+    
+    .section-service {
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid #333;
+        padding: 20px;
+    }
+    
+    .section-service:first-child {
+        border-left: 1px solid #333;
+    }
+    
+    .section-service h4 {
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    
+    .section-service p {
+        margin-top: 15px;
+        font-size: 13px;
+        color: #fff;
+    }
+    
+    .section-projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section-projects--filters {
+        border: 1px solid #ccc;
+        background-color: #eee;
+        border-radius: 30px;
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    
+    .section-projects--filters ul,
+    .section-projects--filters li {
+        list-style: none;
+    }
+    
+    .section-projects--filters li {
+        display: inline-block;
+        padding: 10px;
+        text-transform: uppercase;
+        border-left: 1px solid #ccc;
+        color: #555;
+        border-bottom: 3px solid #eee;
+        cursor: pointer;
+    }
+    
+    .section-projects--filters li:hover,
+    .section-projects--filters li.active {
+        border-bottom: 3px solid #b28756;
+    }
+    
+    .section-projects--filters li:first-child {
+        border-left: 0;
+    }
+    
+    .section-projects--photos {
+        width: 100vw;
+        margin-top: 25px;
+        max-width: 1140px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
+        justify-content: center; */
+    }
+    
+    .section-projects--photos img {
+        max-height: 200px;
+    }
+    
+    .section-projects--photo {
+        width: 280px;
+    }
+    
+    .section-projects--photoarea {
+        margin: 10px;
+        width: 260px;
+        height: 160px;
+    }
+    
+    .section-projects--photoarea img {
+        width: inherit;
+        height: inherit;
+    }
+    
+    .section-projects--photoinfo {
+        display: none;
+    }
