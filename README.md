@@ -5,6 +5,9 @@ Projeto utilizando conceitos de flex box, medidas responsivas, UI/UX.
 ![image](https://user-images.githubusercontent.com/47525873/160460539-dc2fa877-da1e-4d38-a397-23e11485c992.png)
 ![image](https://user-images.githubusercontent.com/47525873/160681113-4a583dce-ca6c-4f28-8e95-9491e6ff4fa9.png)
 ![image](https://user-images.githubusercontent.com/47525873/161401454-687f9376-3ddc-436e-8548-7eacbbf712b5.png)
+![image](https://user-images.githubusercontent.com/47525873/161409503-7bce608e-d602-4399-9a09-eb6f7a9df1cd.png)
+![image](https://user-images.githubusercontent.com/47525873/161409508-9262b050-869b-4c16-972d-8db68fa1f767.png)
+
 
 
 
